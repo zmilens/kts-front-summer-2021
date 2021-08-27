@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(http://fonts.gstatic.com/s/roboto/v15/mErvLBYg_cXG3rLvUsKT_fesZW2xOQ-xsNqO47m55DA.woff2);
+}
+
+
+:root{
+    --main-bg-color: #FFFFFF;
+    --input-focus-color: #FF5555;
+    --border-color: #D9D9D9;
+    --border-color-hover: violet;
+    --text-hint: #7E7E7E;
+    --link-color: #208FBF;
+
+}
+
+body{
+    background-color: var(--main-bg-color);
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-style: normal;
+    padding: 20px;
+
+}
+
+form{
+    display: flex;
+}
+
+form>:last-child{
+    margin-left: 12px;
+}
+
+h1{
+    font-size: 40px;
+}
+
+.red-input:focus {
+    outline: none; 
+    border-color: var(--input-focus-color);
+}
+
+.icons{
+    width: 50px;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: minmax(200px, 357px);
+    margin-top: 20px;
+}
+
+input{
+    width: 295px;
+    height: 50px;
+    padding: 12px;
+    border: 1px solid;
+    border-color: var(--border-color);
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+
+.search-button{
+    border: none;
+    width: 50px;
+    height: 50px;
+    background: url("icons/SearchButton.svg") center no-repeat;
+}
+
+
+.search-button:hover{
+    background: url("icons/SearchButtonHover.svg") center no-repeat;
+}
+
+.search-button:disabled{
+    background: url("icons/SearchButtondisabled.svg") center no-repeat;
+}
+
+.card{
+    background-color: var(--main-bg-color);
+    margin-bottom: 16px;
+    padding: 12px;
+    display: flex;
+    border: 1px solid;
+    border-color: var(--border-color);
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+.card:hover{
+    border-color: var(--border-color-hover);
+}
+
+.card h6:hover{
+    color: var(--link-color)
+}
+
+.card-body{
+    margin: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+h5{
+    font-size: 16px;
+    margin: 0px 0px 4px 0px;
+}
+
+
+h6{
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0px;
+    font-style: normal;
+    font-weight: normal;
+    color: var(--text-hint);
+}
+
+p.info{
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0em;
+    margin-top: 4px;
+    font-style: normal;
+    font-weight: normal;
+    color: var(--text-hint);
+
+}
+
+p.info>*{
+    vertical-align: middle;
+}
+
+p.info >:last-child{
+    margin-left: 20px;
+}
